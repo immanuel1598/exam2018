@@ -8,18 +8,13 @@
             <div class="mb-3 flex ">
                 <div class="space">
                     <label for="domaine">domaine</label>
-                    <select class="form-select" id="domaine" name="domaine">
-                        @if({old('domaine')})
-                            <option selected value="{{ old('domaine') }}"> {{ old('domaine') }}</option>
-                        @else
-                            <option value="" selected disabled>Sélectionnez un domaine</option>
-                        @endif
+                    <select class="form-select" id="domaine" name="domaine" >
+                        <option value="" selected disabled>Sélectionnez un domaine</option>
                         @foreach ($domaines as $domaine)
                             <option value="{{ $domaine }}">{{ $domaine }}</option>
                         @endforeach
                     </select>
                 </div>
-                
                 <div class="space">
                     <label for="année">année</label>
                     <select class="form-select" id="année" name="année">

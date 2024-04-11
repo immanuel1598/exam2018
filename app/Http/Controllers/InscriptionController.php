@@ -51,7 +51,7 @@ class InscriptionController extends Controller
         'sexe'=>$request->sexe]);
 
         inscription::create(
-        ['idadh' =>$use->id,
+        ['idadh' =>$use->Idadh,
         'année'=>$request->année,
         'dateinscription'=>$request->dateinscription,
         'domaine'=>$request->domaine,]
